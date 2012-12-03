@@ -4,3 +4,9 @@
   height: 100px;
   float: left;
 }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

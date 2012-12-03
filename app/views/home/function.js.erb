@@ -2,7 +2,7 @@ $('#queue').empty();
 $('#color').val('');
 $('#color').focus();
 
-<% session[:stack].data.each do |color| %>
+<% session[:queue].data.each do |color| %>
   var colorbox = $('<div>');
   colorbox.addClass('box');
   colorbox.css('background-color', '<%= color %>');

@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    session[:stack]=Stack.new
+    session[:queue]=Que.new
   end
 
   def function
@@ -9,9 +9,9 @@ class HomeController < ApplicationController
     @color = params[:color]
 
     if @function == 'enqueue'
-      session[:stack]#.push(@color)
+      session[:queue].enqueue(@color)
     elsif @function == 'dequeue'
-      session[:stack].pop
+      session[:queue].dequeue
     end
 
   end
