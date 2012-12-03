@@ -1,7 +1,7 @@
 Queued::Application.routes.draw do
   
   root :to => 'home#index'
-  post '/' => 'home#function'
+  post '/queued' => 'home#queued'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

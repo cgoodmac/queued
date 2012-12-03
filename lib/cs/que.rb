@@ -5,7 +5,7 @@ class Que
   end
 
   def enqueue(value)
-    @data[@data.count] = value
+    @data.unshift(value)
   end
 
   def dequeue

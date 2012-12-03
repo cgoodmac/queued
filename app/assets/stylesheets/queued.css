@@ -1,10 +1,14 @@
 .box {
   margin: 10px;
-  width: 200px;
-  height: 100px;
-  float: left;
+  width: 100px;
+  height: 200px;
+  float: right;
 }
 
+
+#queue {
+  width: 600px;
+}
 .group:after {
   content: "";
   display: table;

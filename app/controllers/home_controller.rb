@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     session[:queue]=Que.new
   end
 
-  def function
+  def queued
     @function = params[:commit] 
     @color = params[:color]
 
