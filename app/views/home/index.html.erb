@@ -1,0 +1,10 @@
+<div id='form'>
+  <%= form_tag '/', :remote => true do %>
+    <%= text_field_tag 'color' %>
+    <%= submit_tag 'enqueue' %>
+    <%= submit_tag 'queue' %>
+  <% end %>
+</div>
+
+<div id='queue' class="group">
+</div>
